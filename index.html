@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snow-Sense IoT</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBvC8Im0BvDoTremtKhTekDnW0fXXLWwTI",
+          authDomain: "snowtotals-68015.firebaseapp.com",
+          databaseURL: "https://snowtotals-68015.firebaseio.com",
+          storageBucket: "snowtotals-68015.appspot.com",
+          messagingSenderId: "190433117320"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/drawDataPlot.js"></script>
+
+<script src="js/initialize.js"></script>
+
+  </head>
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <svg id="mainPlot" width="50" height="50"></svg>
+      <div class="linechart"></div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
